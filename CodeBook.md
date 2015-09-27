@@ -17,11 +17,11 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 ###Notes on the original (raw) data 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-##Creating the tidy datafile
+##Creating the tidy data file
 
 ###Guide to create the tidy data file
 in R, run: <br/>
-  source(run_analysis.R) <br/>
+<code>source(run_analysis.R) </code>
 Please check README.md for more detail.
 
 ###Cleaning of the data
@@ -29,14 +29,15 @@ Please check the comments in run_analysis.R
 
 ##Description of the variables in the tiny_data.txt file
 General description of the file including:
- - Dim: 181 lines with 68 variables, include a header in 1st line
+ - Dim: 181 lines with 68 variables, include a header in the 1st line
  - The average of each variable of original features in the UCI dataset
    for each activity and each subject
 
 From varialbe 3 to variable 68, their name are the same as the feature name 
-in the UCI dataset, but the values are averaged by distinct Subject and Activity
+in the UCI dataset, <br/>
+but the values are averaged by **distinct Subject and Activity**
 
-'data.frame':	180 obs. of  68 variables:
+'data.frame':	180 obs. of  68 variables: <br/>
  $ Subject                    : int  1 1 1 1 1 1 2 2 2 2 ... <br/>
  $ Activity                   : Factor w/ 6 levels "LAYING","SITTING",..: 4 6 5 2 3 1 4 6 5 2 ... <br/>
  $ tBodyAcc-mean()-X          : num  0.277 0.255 0.289 0.261 0.279 ... <br/>
